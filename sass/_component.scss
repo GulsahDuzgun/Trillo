@@ -1,19 +1,63 @@
 .logo {
   height: 3.2rem;
+  cursor: pointer;
 }
 
 .search {
-  &__input {
-  }
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &__icon {
-    height: 2.4rem;
-    width: 2.4rem;
+  &__input {
+    width: 90%;
+    color: inherit;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.6rem 1.6rem;
+    border-radius: 127px;
+    transition: all 0.2s;
+    background-color: var(--color-grey-light-2);
+    margin-right: -2.4rem;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-grey-light-4);
+      font-weight: 400;
+    }
   }
 
   &__button {
-    height: 2rem;
-    width: 2.4rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    border-radius: 127px;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
