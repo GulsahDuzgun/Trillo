@@ -1,3 +1,88 @@
+.logo {
+  height: 3.2rem;
+}
+
+.search {
+  &__input {
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__button {
+    height: 2rem;
+    width: 2.4rem;
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__icon-box {
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__notification {
+  }
+
+  &__user {
+  }
+
+  &__user-photo {
+    height: 4rem;
+    border-radius: 50%;
+  }
+}
+
+/*
+.user-nav {
+  &__icon-box {
+    width: 20%;
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-grey-dark-1);
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  &__link span {
+    display: inline-block;
+    align-items: center;
+  }
+
+  &__pp {
+    display: inline-block;
+    margin-right: 0.8rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 11px;
+    padding: 0.4rem 0.8rem;
+    max-width: 20rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+*/
 .home {
   &__img-box {
     max-width: calc(100%-80rem);
