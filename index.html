@@ -89,50 +89,53 @@
           </p>
         </nav>
           
-        <main class="hotel-view">
-          <div class="row">        
-            <section class="home">
-              <div class="home__img-box">
-                <img src="./img/hotel-1.jpg" alt="" class="home__img-box-img" />
-                <img src="./img/hotel-2.jpg" alt="" class="home__img-box-img" />
-                <img src="./img/hotel-3.jpg" alt="" class="home__img-box-img" />
-              </div>
+        <main class="hotel-view">       
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="./img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="./img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="./img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
+            </figure>
+          </div>
 
-              <div class="home__header">
-                <div class="home__header-info">
-                  <p class="home__hotel-title">Hotel Las Palmas</p>
-                  <span>Icons</span>
-                </div>
-                <div class="home__header-evaluation">
-                  <a href="#" class="home__address">Albuferia, Portugal</a>
-                  <div class="home__vote">
-                    <p class="home__vote-rate">8.6</p>
-                    <p class="home__vote-rateCount">429 votes</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="testrimontial">
-              <div class="testrimontial__info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                commodi necessitatibus ab eaque maxime architecto, voluptatem rem,
-                animi, aliquam ratione quod tempore deleniti!
-              </div>
-              <div class="testrimontial__box">
-                <div class="testrimontial__box-1">
-                  <p class="testrimontial__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora earum hic nam quos quis commodi! Cupiditate?</p>
-                  <div class="user">
-                    <div class="user__info">
-                      <img src="img/user-1.jpg" alt="user picture" class="user__img">
-                      <div class="user__text-box">
-                        <p class="user__name">Jonathan Hilbren</p>
-                        <p class="user__date">18 January 2024</p>
-                      </div>
-                    </div>
-                  <p class="rate">7.8</p>
-                </div>
-              </div>
-            </section>
+          <div class="overview">
+            <h1 class="overview__heading">
+              Hotel Las Palmas
+            </h1>
+
+            <div class="overview__stars">
+              <svg class="overview__icon--star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon--star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>            
+              <svg class="overview__icon--star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>             
+              <svg class="overview__icon--star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>              
+              <svg class="overview__icon--star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon--location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Albufeira, Portugal</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overvire__rating-count">429 votes</div>
+            </div>
           </div>
       </main>
       <!-- <footer class="footer">

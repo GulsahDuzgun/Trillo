@@ -117,93 +117,6 @@
   }
 }
 
-.home {
-  &__img-box {
-    max-width: calc(100%-80rem);
-  }
-
-  &__img-box-img {
-    width: 33%;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-
-    &-info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: var(--color-grey-dark-1);
-    }
-
-    &-evaluation {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-
-  &__hotel-title {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    margin: 0 3.2rem;
-  }
-
-  &__address {
-    font-size: 1.2rem;
-    margin-right: 3.2rem;
-    padding: 1.2rem 0rem;
-    text-decoration: none;
-  }
-
-  &__vote {
-    background-color: var(--color-primary);
-    color: var(--color-grey-light-1);
-    padding: 1.2rem;
-    text-align: center;
-  }
-
-  &__vote-rate {
-    font-size: 1.6rem;
-  }
-
-  &__vote-rateCount {
-    font-size: 1.2rem;
-  }
-}
-
-.testrimontial {
-  display: flex;
-  padding: 1.6rem 3.2rem;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--color-grey-light-2);
-
-  &__box-1 {
-    background-color: #fff;
-    padding: 2.4rem 3.2rem;
-  }
-
-  &__info {
-    font-size: 1.2rem;
-    max-width: 60%;
-    margin: 0 2.4rem 0 0;
-    background-color: #fff;
-    padding: 2.4rem 3.2rem;
-  }
-
-  &__box {
-    display: flex;
-    align-self: flex-start;
-    align-items: center;
-  }
-
-  &__description {
-    font-size: 1rem;
-  }
-}
-
 .user {
   background-color: #fff;
   display: flex;
@@ -290,6 +203,44 @@
       opacity: 1;
       transform: translate(0, 0);
     }
+  }
+}
+
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.overview {
+  display: flex;
+  &__heading {
+  }
+
+  &__stars {
+    // margin-right: auto;
+  }
+
+  &__icon--star,
+  &__icon--location {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+    margin-left: auto;
+  }
+
+  &__rating {
+  }
+
+  &__rating-average {
+  }
+
+  &__rating-count {
   }
 }
 

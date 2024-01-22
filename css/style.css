@@ -208,70 +208,6 @@ body {
   .user-nav__user-name {
     font-weight: 500; }
 
-.home__img-box {
-  max-width: calc(100%-80rem); }
-
-.home__img-box-img {
-  width: 33%; }
-
-.home__header {
-  display: flex;
-  justify-content: space-between; }
-  .home__header-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--color-grey-dark-1); }
-  .home__header-evaluation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-
-.home__hotel-title {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  margin: 0 3.2rem; }
-
-.home__address {
-  font-size: 1.2rem;
-  margin-right: 3.2rem;
-  padding: 1.2rem 0rem;
-  text-decoration: none; }
-
-.home__vote {
-  background-color: var(--color-primary);
-  color: var(--color-grey-light-1);
-  padding: 1.2rem;
-  text-align: center; }
-
-.home__vote-rate {
-  font-size: 1.6rem; }
-
-.home__vote-rateCount {
-  font-size: 1.2rem; }
-
-.testrimontial {
-  display: flex;
-  padding: 1.6rem 3.2rem;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--color-grey-light-2); }
-  .testrimontial__box-1 {
-    background-color: #fff;
-    padding: 2.4rem 3.2rem; }
-  .testrimontial__info {
-    font-size: 1.2rem;
-    max-width: 60%;
-    margin: 0 2.4rem 0 0;
-    background-color: #fff;
-    padding: 2.4rem 3.2rem; }
-  .testrimontial__box {
-    display: flex;
-    align-self: flex-start;
-    align-items: center; }
-  .testrimontial__description {
-    font-size: 1rem; }
-
 .user {
   background-color: #fff;
   display: flex;
@@ -334,6 +270,21 @@ body {
   visibility: visible;
   opacity: 1;
   transform: translate(0, 0); }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: inline-block; }
+
+.overview {
+  display: flex; }
+  .overview__icon--star, .overview__icon--location {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-primary); }
+  .overview__location {
+    margin-left: auto; }
 
 /*
   SPACING SYSTEM (px)
