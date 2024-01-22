@@ -57,7 +57,8 @@ body {
   border-bottom: var(--color-grey-light-2);
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 3.2rem; }
+  padding: 1.6rem 3.2rem;
+  border-bottom: 1px solid var(--color-grey-light-2); }
 
 .content {
   display: flex; }
@@ -273,18 +274,81 @@ body {
 
 .gallery {
   display: flex; }
-  .gallery__photo {
+  .gallery__item {
     width: 100%;
     display: inline-block; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
 
 .overview {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2); }
+  .overview__heading {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0.8rem 2.4rem; }
+  .overview__stars {
+    display: flex; }
   .overview__icon--star, .overview__icon--location {
     width: 1.6rem;
     height: 1.6rem;
     fill: var(--color-primary); }
   .overview__location {
-    margin-left: auto; }
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 1.2rem; }
+  .overview__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    align-self: stretch;
+    padding: 0 0.8rem;
+    margin-left: 1.2rem; }
+  .overview__rating-average {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff; }
+  .overview__rating-count {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #fff; }
+
+.btn-inline {
+  display: inline-block;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  padding-bottom: 2px;
+  color: var(--color-primary);
+  border-bottom: 2px solid currentColor;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  transition: all 0.2s;
+  cursor: pointer; }
+  .btn-inline:hover {
+    color: var(--color-grey-dark-1);
+    animation: pulsate 1s infinite; }
+  .btn-inline:focus {
+    outline: non; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    box-shadow: none;
+    transform: scale(1); } }
 
 /*
   SPACING SYSTEM (px)
