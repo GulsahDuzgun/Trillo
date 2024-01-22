@@ -27,9 +27,7 @@
 }
 
 .navigation {
-  height: 100%;
   flex: 0 0 18%;
-  margin-bottom: auto;
   width: 80rem;
   background-color: var(--color-grey-dark-1);
   display: flex;
@@ -67,8 +65,13 @@
   &__link:hover {
   }
 
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+
   &__copyright {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     color: var(--color-grey-light-4);
   }
