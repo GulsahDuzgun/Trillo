@@ -341,12 +341,15 @@
   background-color: #fff;
   box-shadow: var(--shadow-light);
   margin-bottom: 3.2rem;
-  padding: 1.2rem 2.4rem;
+  padding: 2rem 2.4rem;
   border-radius: 3px;
+  position: relative;
 
   &__text {
-    padding: 1.2rem 0;
+    padding: 0 0 1.2rem 0;
     margin-bottom: 0.8rem;
+    position: relative;
+    z-index: 127;
   }
 
   &__user {
@@ -381,6 +384,18 @@
   &__rating {
     color: var(--color-primary);
     font-size: 1.8rem;
+  }
+
+  &::before {
+    content: "\201C";
+    font-size: 24rem;
+    color: var(--color-grey-light-2);
+    line-height: 1;
+    font-family: sans-serif;
+    position: absolute;
+    z-index: 1;
+    top: -0.8rem;
+    left: -0.1rem;
   }
 }
 
