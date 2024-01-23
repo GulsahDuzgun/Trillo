@@ -441,6 +441,52 @@ body {
     top: -3.2rem;
     left: -1.2rem; }
 
+.cta {
+  text-align: center;
+  padding: 3.2rem 1.2rem; }
+  .cta__book-now {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1.8rem; }
+
+.btn {
+  display: inline-block;
+  position: relative;
+  border-radius: 127px;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  overflow: hidden; }
+  .btn__front {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+    padding: 1.8rem 6.4rem; }
+  .btn__back {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    transition: all 0.2s;
+    padding: 1.8rem 0rem; }
+  .btn:hover {
+    background-image: linear-gradient(to right, var(--color-primary-dark), var(--color-primary-light)); }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s; }
+  .btn:hover .btn__front {
+    transform: translateY(100%); }
+  .btn:hover .btn__back {
+    top: 0; }
+
 .btn-inline {
   display: inline-block;
   font-size: inherit;
