@@ -138,7 +138,10 @@ body {
   border-radius: 3px; }
 
 .user-review {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 /*
   SPACING SYSTEM (px)
@@ -394,7 +397,8 @@ body {
   margin-bottom: 3.2rem;
   padding: 2rem 2.4rem;
   border-radius: 3px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .review__text {
     padding: 0 0 1.2rem 0;
     margin-bottom: 0.8rem;
@@ -430,8 +434,8 @@ body {
     font-family: sans-serif;
     position: absolute;
     z-index: 1;
-    top: -0.8rem;
-    left: -0.1rem; }
+    top: -3.2rem;
+    left: -1.2rem; }
 
 .btn-inline {
   display: inline-block;
@@ -445,11 +449,16 @@ body {
   border-radius: 3px;
   transition: all 0.2s;
   cursor: pointer; }
+  .btn-inline span {
+    margin-left: 2px;
+    transition: all 0.2s; }
   .btn-inline:hover {
     color: var(--color-grey-dark-1);
     animation: pulsate 1s infinite; }
+    .btn-inline:hover span {
+      margin-left: 8px; }
   .btn-inline:focus {
-    outline: non; }
+    outline: none; }
 
 @keyframes pulsate {
   0% {
