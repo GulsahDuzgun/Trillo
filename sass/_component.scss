@@ -337,6 +337,53 @@
   }
 }
 
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  margin-bottom: 3.2rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 3px;
+
+  &__text {
+    padding: 1.2rem 0;
+    margin-bottom: 0.8rem;
+  }
+
+  &__user {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+    flex: 1;
+    margin-right: auto;
+    padding: 0 0.8rem;
+  }
+
+  &__user-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+
+  &__user-date {
+    font-weight: 300;
+    color: var(--color-grey-dark-2);
+  }
+
+  &__rating {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+  }
+}
+
 .btn-inline {
   display: inline-block;
   font-size: inherit;
