@@ -118,7 +118,8 @@ body {
   .navigation__copyright {
     font-size: 1.2rem;
     text-align: center;
-    color: var(--color-grey-light-4); }
+    color: var(--color-grey-light-4);
+    padding: 1.6rem 0; }
 
 .detail {
   display: flex;
@@ -131,7 +132,8 @@ body {
   margin-right: 3.2rem;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-light);
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  padding: 1.6rem 2.4rem; }
 
 .user-overview {
   flex: 1; }
@@ -309,7 +311,8 @@ body {
     text-transform: uppercase;
     padding: 0.8rem 2.4rem; }
   .overview__stars {
-    display: flex; }
+    display: flex;
+    cursor: pointer; }
   .overview__icon--star, .overview__icon--location {
     width: 1.6rem;
     height: 1.6rem;
@@ -319,7 +322,8 @@ body {
     display: flex;
     align-items: center;
     color: var(--color-primary);
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    cursor: pointer; }
   .overview__rating {
     display: flex;
     flex-direction: column;
@@ -338,6 +342,49 @@ body {
     text-transform: uppercase;
     font-weight: 100;
     color: #fff; }
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 3.2rem; }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 2.4rem 0rem;
+  padding: 2rem 2.4rem;
+  border-top: var(--line);
+  border-top: var(--line); }
+  .list__item {
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%; }
+    .list__item:not(:last-child) {
+      margin-bottom: 0.8rem; }
+    .list__item::before {
+      content: "";
+      display: inline-block;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 0.1rem;
+      background-color: var(--color-primary);
+      --webkit-mask-image: url("../img/chevron-small-right.svg");
+      --webkit-mask-size: cover;
+      mask-image: url("../img/chevron-small-right.svg");
+      mask-size: cover; }
+
+.recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .recommend__count {
+    font-size: 1.3rem; }
+  .recommend__photo {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.6rem; }
 
 .btn-inline {
   display: inline-block;
