@@ -387,9 +387,13 @@ body {
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 50%;
-    border: 3px solid #fff; }
+    border: 3px solid #fff;
+    transition: all 0.1s; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.6rem; }
+    .recommend__photo:hover {
+      transform: scale(1.1);
+      z-index: 127; }
 
 .review {
   background-color: #fff;
