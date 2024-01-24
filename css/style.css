@@ -466,11 +466,15 @@ body {
       width: 2.4rem;
       height: 2.4rem;
       margin-right: 0.1rem;
-      background-color: var(--color-primary);
-      --webkit-mask-image: url("../img/chevron-small-right.svg");
-      --webkit-mask-size: cover;
-      mask-image: url("../img/chevron-small-right.svg");
-      mask-size: cover; }
+      background-image: url("../img/chevron-small-right.svg"); }
+    @supports (--webkit-mask-image: url("../img/chevron-small-right.svg")) or (mask-image: url()) {
+      .list__item::before {
+        background-image: none;
+        background-color: var(--color-primary);
+        --webkit-mask-image: url("../img/chevron-small-right.svg");
+        --webkit-mask-size: cover;
+        mask-image: url("../img/chevron-small-right.svg");
+        mask-size: cover; } }
 
 .recommend {
   display: flex;
