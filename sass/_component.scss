@@ -280,6 +280,9 @@
 
 .paragraph:not(:last-of-type) {
   margin-bottom: 3.2rem;
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .list {
@@ -289,7 +292,11 @@
   margin: 2.4rem 0rem;
   padding: 2rem 2.4rem;
   border-top: var(--line);
-  border-top: var(--line);
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 2rem 0;
+  }
 
   &__item {
     display: flex;
@@ -340,6 +347,10 @@
       transform: scale(1.1);
       z-index: 127;
     }
+  }
+
+  &__friends {
+    display: flex;
   }
 }
 
@@ -414,6 +425,10 @@
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 1.8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.4rem 3.2rem;
   }
 }
 
