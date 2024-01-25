@@ -394,7 +394,7 @@ body {
     .gallery__item:nth-child(1)::after {
       content: "Cozy Hotels"; }
     .gallery__item:nth-child(2)::after {
-      content: "Large Pools"; }
+      content: "Large Pool"; }
     .gallery__item:nth-child(3)::after {
       content: "impressive sunrise"; }
     .gallery__item:hover::after {
