@@ -287,7 +287,7 @@ body {
   .user-nav__icon-box {
     position: relative; }
   .user-nav__icon-box:nth-child(2) .user-nav__notification {
-    right: 0rem !important; }
+    right: 0.1rem !important; }
   .user-nav__icon {
     height: 2.4rem;
     width: 2.4rem;
@@ -302,7 +302,7 @@ body {
     align-items: center;
     background-color: var(--color-primary);
     color: #fff;
-    top: 0.4rem;
+    top: 0.5rem;
     right: 0.8rem; }
   .user-nav__user-photo {
     height: 4rem;
@@ -367,10 +367,41 @@ body {
   transform: translate(0, 0); }
 
 .gallery {
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
   .gallery__item {
     width: 100%;
-    display: inline-block; }
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: relative; }
+    .gallery__item:hover {
+      transform: scale(1.03);
+      filter: brightness(70%); }
+    .gallery__item::after {
+      display: block;
+      position: absolute;
+      right: 2.4rem;
+      bottom: 1.2rem;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      display: none;
+      transform: translateY(2rem);
+      transition: translate 1s, opacity 0.5s, visibility 0.5s;
+      opacity: 0;
+      visibility: hidden; }
+    .gallery__item:nth-child(1)::after {
+      content: "Cozy Hotels"; }
+    .gallery__item:nth-child(2)::after {
+      content: "Large Pool"; }
+    .gallery__item:nth-child(3)::after {
+      content: "impressive sunrise"; }
+    .gallery__item:hover::after {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-0.8rem); }
   .gallery__photo {
     width: 100%;
     display: block; }
