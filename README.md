@@ -3,7 +3,7 @@
 _**What is Trillo project ?** Trillo is a landing website for booking hotel on your holiday. You can visit the site by clicking the link &rarr;[Trillo](https://trillo-gldn.netlify.app/)_
 <br/>
 
-### What did I learn while coding these project ?
+### What did I learn while coding this project ?
 
 _In this project I used mostly flexbox and work on animations. Also I practiced BEM (Block Element Modifier) and SCSS 😀._
 
